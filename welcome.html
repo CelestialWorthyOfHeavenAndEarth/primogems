@@ -15,7 +15,7 @@
         }
 
         .container {
-            background: rgba(255, 255, 255, 0.9); /* Slightly transparent for a clean look */
+            background: rgba(255, 255, 255, 0.9);
             border-radius: 15px;
             box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
             padding: 2rem 2.5rem;
@@ -25,7 +25,7 @@
         }
 
         .btn-primary {
-            background-color: #f5b400; /* Gold button */
+            background-color: #f5b400;
             color: white;
             padding: 0.75rem 2rem;
             border-radius: 5px;
@@ -36,7 +36,7 @@
         }
 
         .btn-primary:hover {
-            background-color: #d49b00; /* Darker gold */
+            background-color: #d49b00;
             transform: scale(1.05);
         }
 
@@ -68,7 +68,6 @@
         .logo {
             max-width: 250px;
             margin: 0 auto 2rem;
-            mix-blend-mode: screen;
         }
 
         .text-center p {
@@ -123,7 +122,7 @@
             <!-- Server Selection -->
             <div class="form-group">
                 <label for="server">* Server</label>
-                <select id="server" name="server" required>
+                <select id="server" name="server" required aria-label="Select your server">
                     <option value="" disabled selected>Select server</option>
                     <option value="Asia">Asia</option>
                     <option value="Europe">Europe</option>
@@ -140,12 +139,13 @@
                     id="nickname" 
                     name="nickname" 
                     required 
-                    placeholder="Enter character nickname">
+                    placeholder="Enter character nickname" 
+                    aria-label="Character Nickname">
             </div>
 
             <!-- Submit Button -->
             <div>
-                <button type="submit" class="btn-primary">Enter</button>
+                <button type="submit" class="btn-primary" title="Submit your details to redeem rewards">Enter</button>
             </div>
         </form>
     </div>

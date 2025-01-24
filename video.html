@@ -19,12 +19,15 @@
             Since you came all this wayyy...<br> Why not watch this video???
         </h1>
 
-        <!-- Embed YouTube video with responsive design -->
-        <div class="embed-container mb-6 relative" style="padding-bottom: 56.25%; height: 0; overflow: hidden;">
-            <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/a7nmvV7ZykU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!-- Local video embed -->
+        <div class="video-container mb-6">
+            <video class="mx-auto rounded-lg shadow-lg" width="640" height="360" controls>
+                <source src="videos/levivideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
 
-        <!-- Next button -->
+        <!-- Button to navigate to the final page -->
         <div class="mt-6">
             <a href="final.html" class="bg-blue-500 text-white font-bold py-4 px-10 rounded-full shadow-lg hover:bg-blue-700 transform hover:scale-105 inline-block transition duration-300">
                 Next
